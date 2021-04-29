@@ -18,18 +18,31 @@ class Game extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      questionSet: {},
-      count: 16
+      questionSet: this.generateRandomQuestions()
     };
   }
 
-
   generateRandomQuestions() {
-    for (let i = 0 ; i < this.state.count ; i++) {
-      var random = Math.floor(Math.random() * (40-1+1)) + 1;
-      alert(random)
-      // this.state.questionSet = [...this.state.questionSet]; 
+    var questionTracker = []
+    let i = 0;
+    while (i < 16) {
+      var random = questions[Math.floor(Math.random() * questions.length)];
+      if (!questionTracker.includes(random.id)) {
+        i++; 
+        questionTracker.push(random.id);
+      }  
     }
+    return questionTracker;
+  }
+
+  render() {
+    const questionSet = this.state.questionSet;
+
+    return(
+      <div className="game">
+          <Board questionSet={this.generateRandomQuestions()}/>
+      </div>
+    )
   }
 
 }
@@ -37,11 +50,15 @@ class Game extends React.Component {
 // Board component:
 class Board extends React.Component {
   renderCards() {
+    const questionsTracker = this.props.questionSet;
+    console.log(questionsTracker);
     return (
       <div className="cards"> 
-        {questions.map(question => 
-            <Card questionInfo={question}></Card>
-          )}
+        {questions.map((question, key) => {
+              if(questionsTracker.includes(question.id))
+                 return(<Card questionInfo={question}></Card>)
+          } 
+        )}
       </div>
     );
   }
@@ -85,7 +102,8 @@ ReactDOM.render(
   <React.StrictMode>
     {/* <App /> */}
     <h1> Hello, world! </h1>
-    <Board/>
+    {/* <Board/> */}
+    <Game/>
   </React.StrictMode>,
   document.getElementById('root')
 );
