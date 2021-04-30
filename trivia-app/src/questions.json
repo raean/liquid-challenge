@@ -117,7 +117,7 @@
             "60m x 30m"
         ],
         "correct": "50m x 25m",
-        "category": "Sports"
+        "category": "Science"
     }, 
     {
         "id": 12,
@@ -128,7 +128,7 @@
             "C"
         ],
         "correct": "B",
-        "category": "X"
+        "category": "Science"
     }, 
     {
         "id": 13,
@@ -139,7 +139,7 @@
             "C"
         ],
         "correct": "B",
-        "category": "X"
+        "category": "Science"
     }, 
     {
         "id": 14,
@@ -150,7 +150,7 @@
             "C"
         ],
         "correct": "B",
-        "category": "X"
+        "category": "Science"
     }, 
     {
         "id": 15,
@@ -161,7 +161,7 @@
             "C"
         ],
         "correct": "B",
-        "category": "X"
+        "category": "Science"
     }, 
     {
         "id": 16,
@@ -172,7 +172,7 @@
             "C"
         ],
         "correct": "B",
-        "category": "X"
+        "category": "Science"
     }, 
     {
         "id": 17,
@@ -183,7 +183,7 @@
             "C"
         ],
         "correct": "B",
-        "category": "X"
+        "category": "Science"
     }, 
     {
         "id": 18,
@@ -194,7 +194,7 @@
             "C"
         ],
         "correct": "B",
-        "category": "X"
+        "category": "Science"
     }, 
     {
         "id": 19,
@@ -205,7 +205,7 @@
             "C"
         ],
         "correct": "B",
-        "category": "X"
+        "category": "Science"
     }, 
     {
         "id": 20,
@@ -216,7 +216,7 @@
             "C"
         ],
         "correct": "B",
-        "category": "X"
+        "category": "Music"
     }, 
     {
         "id": 21,
@@ -227,7 +227,7 @@
             "C"
         ],
         "correct": "B",
-        "category": "X"
+        "category": "Music"
     }, 
     {
         "id": 22,
@@ -238,7 +238,7 @@
             "C"
         ],
         "correct": "B",
-        "category": "X"
+        "category": "Music"
     }, 
     {
         "id": 23,
@@ -249,7 +249,7 @@
             "C"
         ],
         "correct": "B",
-        "category": "X"
+        "category": "Music"
     }, 
     {
         "id": 24,
@@ -260,7 +260,7 @@
             "C"
         ],
         "correct": "B",
-        "category": "X"
+        "category": "Music"
     }, 
     {
         "id": 25,
@@ -271,7 +271,7 @@
             "C"
         ],
         "correct": "B",
-        "category": "X"
+        "category": "Music"
     }, 
     {
         "id": 26,
@@ -282,7 +282,7 @@
             "C"
         ],
         "correct": "B",
-        "category": "X"
+        "category": "Music"
     }, 
     {
         "id": 27,
@@ -293,7 +293,7 @@
             "C"
         ],
         "correct": "B",
-        "category": "X"
+        "category": "Music"
     }, 
     {
         "id": 28,
@@ -304,7 +304,7 @@
             "C"
         ],
         "correct": "B",
-        "category": "X"
+        "category": "Music"
     }, 
     {
         "id": 29,
@@ -315,7 +315,7 @@
             "C"
         ],
         "correct": "B",
-        "category": "X"
+        "category": "Music"
     }, 
     {
         "id": 30,
@@ -326,7 +326,7 @@
             "C"
         ],
         "correct": "B",
-        "category": "X"
+        "category": "Nature"
     }, 
     {
         "id": 31,
@@ -337,7 +337,7 @@
             "C"
         ],
         "correct": "B",
-        "category": "X"
+        "category": "Nature"
     }, 
     {
         "id": 32,
@@ -348,7 +348,7 @@
             "C"
         ],
         "correct": "B",
-        "category": "X"
+        "category": "Nature"
     }, 
     {
         "id": 33,
@@ -359,7 +359,7 @@
             "C"
         ],
         "correct": "B",
-        "category": "X"
+        "category": "Nature"
     }, 
     {
         "id": 34,
@@ -370,7 +370,7 @@
             "C"
         ],
         "correct": "B",
-        "category": "X"
+        "category": "Nature"
     }, 
     {
         "id": 35,
@@ -381,7 +381,7 @@
             "C"
         ],
         "correct": "B",
-        "category": "X"
+        "category": "Nature"
     }, 
     {
         "id": 36,
@@ -392,7 +392,7 @@
             "C"
         ],
         "correct": "B",
-        "category": "X"
+        "category": "Nature"
     }, 
     {
         "id": 37,
@@ -403,7 +403,7 @@
             "C"
         ],
         "correct": "B",
-        "category": "X"
+        "category": "Nature"
     }, 
     {
         "id": 38,
@@ -414,7 +414,7 @@
             "C"
         ],
         "correct": "B",
-        "category": "X"
+        "category": "Nature"
     }, 
     {
         "id": 39,
@@ -425,7 +425,7 @@
             "C"
         ],
         "correct": "B",
-        "category": "X"
+        "category": "Nature"
     }, 
     {
         "id": 40,
@@ -436,6 +436,6 @@
             "C"
         ],
         "correct": "B",
-        "category": "X"
+        "category": "Nature"
     }
 ]

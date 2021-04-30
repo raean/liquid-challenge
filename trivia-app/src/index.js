@@ -17,10 +17,22 @@ class Game extends React.Component {
 
   constructor(props) {
     super(props);
+    var questionsSet = this.generateRandomQuestions();
     this.state = {
-      questionSet: this.generateRandomQuestions()
+      userScore: 0
     };
+
   }
+
+  pointGained(point) {
+    this.setState({
+      userScore: this.state.userScore+1
+    });
+  }
+
+
+
+  // We need a handle click here to take in the question that was being answered. It has a to increment or keep the userScore the same and alter the score appearing on the as well as nullify the buttons.
 
   generateRandomQuestions() {
     var questionTracker = []
@@ -36,27 +48,28 @@ class Game extends React.Component {
   }
 
   render() {
-    const questionSet = this.state.questionSet;
-
     return(
       <div className="game">
-          <Board questionSet={this.generateRandomQuestions()}/>
+        <h1>Rae's Trivia Challenge</h1> 
+        <h2> Your score: {this.state.userScore}/16</h2>
+          <Board questionSet={this.generateRandomQuestions()} 
+          onClick={() => this.pointGained()}/>
       </div>
     )
   }
-
 }
 
 // Board component:
 class Board extends React.Component {
+
   renderCards() {
     const questionsTracker = this.props.questionSet;
-    console.log(questionsTracker);
     return (
       <div className="cards"> 
         {questions.map((question, key) => {
               if(questionsTracker.includes(question.id))
-                 return(<Card questionInfo={question}></Card>)
+                 return(<Card questionInfo={question} category={question.category} onClick={() => this.props.onClick()}></Card>)
+
           } 
         )}
       </div>
@@ -83,13 +96,31 @@ class Board extends React.Component {
 class Card extends React.Component {
 
 
+  findColour(category) {
+    var colour = "white";
+    if (category === "Sports") {
+      colour = "#f0f8ff";
+    } else if (category === "Science") {
+      colour = "#fff8dc";
+    } else if (category === "Music") {
+      colour = "#fffafa";
+    } else {
+      colour = "#f5f5dc";
+    }
+    return colour;
+  }
+
   render() {
+
+    var score = "?";
+
     return (
-      <div className="card">
+      <div className="card" style={{background: this.findColour(this.props.category)}}>
         <p> Category: {this.props.questionInfo.category}</p>
+        <p> Score: {score}/1</p>
         <p key={this.props.questionInfo.id}> {this.props.questionInfo.question} </p>
           {this.props.questionInfo.options.map(option => 
-            <button>{option}</button> 
+            <button onClick={() => this.scoreUser(option, this.props.questionInfo.correct)} onClick={() => this.props.onClick()}>{option}</button> 
           )}
       </div>
     )} 
@@ -100,9 +131,6 @@ class Card extends React.Component {
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <App /> */}
-    <h1> Hello, world! </h1>
-    {/* <Board/> */}
     <Game/>
   </React.StrictMode>,
   document.getElementById('root')
