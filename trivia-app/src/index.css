@@ -12,6 +12,22 @@ code {
     monospace;
 }
 
-.cards {
-  display: inline;
+* {
+  margin: 10px;
 }
+
+
+.title, .sub-title {
+  text-align: center;
+}
+
+.card {
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.cards {
+  width: 80%;
+  margin: auto;
+}
+
